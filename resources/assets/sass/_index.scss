@@ -1,0 +1,304 @@
+.revSliderMessage{
+    @include xs{
+        font-size: 3rem !important;
+        line-height: 4rem !important;
+    }
+}
+
+.imgWithSideText{
+    background-image: url('../img/img-pattern-left.png');
+    background-repeat: no-repeat;
+    background-position: left 18px top;
+    margin-left: 40px;
+    @include xs{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    @include sm{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    h1{
+        transform: rotate(-90deg);
+        font-weight: 300;
+        font-size: 100px;
+        color: $blue;
+        letter-spacing: 0;
+        text-align: right;
+        position: absolute;
+        right: -34%;
+        bottom: 42%;
+        @include md{
+            right: -40%;
+            bottom: 42%;
+            font-size: 84px;
+        }
+        @include xs{
+            position: static;
+            right: auto;
+            bottom: 50%;
+            transform: rotate(0deg);
+            font-size: 40px;
+        }
+        @include sm{
+            position: static;
+            right: auto;
+            bottom: 50%;
+            transform: rotate(0deg);
+            font-size: 70px;
+        }
+    }
+}
+h1.openingHeading{
+        transform: rotate(-90deg);
+        font-weight: 300;
+        font-size: 100px;
+        color: $blue;
+        letter-spacing: 0;
+        text-align: right;
+        position: absolute;
+        right: -34%;
+        bottom: 42%;
+        @include md{
+            right: -40%;
+            bottom: 42%;
+            font-size: 84px;
+        }
+        @include xs{
+            position: static;
+            right: auto;
+            bottom: 50%;
+            transform: rotate(0deg);
+            font-size: 40px;
+        }
+        @include sm{
+            position: static;
+            right: auto;
+            bottom: 50%;
+            transform: rotate(0deg);
+            font-size: 70px;
+        }
+    }
+.imgWithSideTextLeft{
+    background-image: url('../img/img-pattern-left.png');
+    background-repeat: no-repeat;
+    background-position: left 18px top;
+    margin-left: 40px;
+    @include xs{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    @include sm{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    h1{
+        transform: rotate(-90deg);
+        font-weight: 300;
+        font-size: 100px;
+        color: $blue;
+        letter-spacing: 0;
+        text-align: right;
+        position: absolute;
+        left: -14%;
+        bottom: 42%;
+        @include md{
+            left: -21%;
+            bottom: 42%;
+            font-size: 84px;
+        }
+        @include xs{
+            position: static;
+            left: auto;
+            bottom: 50%;
+            transform: rotate(0deg);
+            font-size: 40px;
+        }
+        @include sm{
+            position: static;
+            left: auto;
+            bottom: 50%;
+            transform: rotate(0deg);
+            font-size: 70px;
+        }
+    }
+}
+
+.homeMidButtons{
+    .midButton{
+        padding: 100px 40px;
+        -webkit-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+        float: left;
+        display: block;
+        @include transition(all, 0.30s, ease-in-out);
+        &:hover{
+            padding: 90px 40px;
+            span.text{
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        @include sm{
+            width: 100% !important;
+            float: none !important;
+        }
+        @include xs{
+            width: 100% !important;
+            float: none !important;
+        }
+    }
+    .molds{
+        background-image: url('../img/tire-curing-molds-bg.png');
+        width: 50%;
+        border-right: 2px solid #fff;
+        @include xs{
+            border-right: none;
+            border-bottom: 2px solid #fff;
+        }
+        @include sm{
+            border-right: none;
+            border-bottom: 2px solid #fff;
+        }
+    }
+    .presses{
+        background-image: url('../img/tire-curing-presses-bg.png');
+        width: 50%;
+        border-left: 2px solid #fff;
+        @include xs{
+            border-left: none;
+            border-top: 2px solid #fff;
+        }
+        @include sm{
+            border-left: none;
+            border-top: 2px solid #fff;
+        }
+    }
+    span.sep{
+        width: 30%;
+        margin: 0 auto;
+        height: 4px;
+        background: #fff;
+        display: block;
+    }
+    span.text{
+        @include catamaran();
+        font-weight: 500;
+        font-size: 48px;
+        color: #FFFFFF;
+        letter-spacing: 2.86px;
+        text-align: center;
+        line-height: 55px;
+        text-shadow: 4px 2px 2px #060E9F;
+        background: rgba(#445BA0, 0.64);
+        display: inline-block;
+        padding: 4px;
+        max-width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include transition(all, 0.30s, ease-in-out);
+        @include xs{
+            max-width: 100%;
+        }
+        @include sm{
+            max-width: 100%;
+        }
+
+    }
+}
+
+.revSliderMessage{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    span.sep{
+        width: 30%;
+        height: 1px;
+        background: #6C95CE;
+        display: block;
+        margin-bottom: 20px;
+    }
+    p{
+        padding-left: 50px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    font-size: 6rem;
+    line-height: 7rem;
+}
+
+.mapIntro{
+    h1{
+        color: $blue;
+        @include catamaran();
+        /* 38 COUNTRIES: */
+        font-size: 100px;
+        font-weight: 700;
+        letter-spacing: 4.67px;
+        margin-bottom: 0px;
+        background-image: url('../img/network-icon2.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 80px;
+        line-height: 80px;
+        display: inline-block;
+    }
+    h2{
+        color: $blue;
+        margin-top: 0;
+        @include catamaran();
+        /* 38 COUNTRIES: */
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: 4.67px;
+        line-height: 65px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    span.sep{
+        width: 50%;
+        height: 3px;
+        background: $blue;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+image.amcharts-map-image{
+    width: 30px;
+    height: 30px;
+}
+
+svg+a{
+    display: none !important;
+}
+.newsImageContainer{
+    padding: 20px 40px;
+}
+.newsImage{
+
+    box-shadow: 10px 30px 50px 0 rgba(0,0,0,0.50);
+}
+
+#spotlight_wrapper{
+    background: $blue !important;
+}
+
+.revSliderMessage{
+    @include xs{
+    font-size: 38px !important;
+    line-height: 46px !important
+    }
+}
+
+.homeAboutMaxWidth{
+    @include lg{
+        float:right;
+        max-width: 400px;
+    }
+    
+}

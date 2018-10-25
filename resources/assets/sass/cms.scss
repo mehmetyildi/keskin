@@ -1,0 +1,179 @@
+.clearfix:before, .clearfix:after {content:""; display: table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+
+.onoffswitch-inner:before {
+  content: attr(data-on);
+}
+
+.onoffswitch-inner:after {
+  content: attr(data-off);
+}
+
+.toast-top-right{
+	bottom:44px;
+	top: auto;
+	right:0;
+}
+
+.navbar-default li.header{
+	display: block;
+	padding:10px 15px 10px 30px;
+	color: #8095a8;
+	background:#3e5468;
+}
+
+.actionsColumn{
+	width:70px;
+}
+.ibox-title{
+	min-height:60px;
+}
+.ibox-tools{
+	line-height:30px;
+}
+.ibox-title > a{
+	float:left;
+}
+.ibox-title > h5{
+	line-height:30px;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #e5e6e7;
+  -webkit-text-fill-color: #333;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.float-e-margins table .btn, table .btn{
+	margin-bottom: 0;
+}
+
+.formActions{
+	a, button{
+		display: block;
+		width:100%;
+		margin-bottom: 15px;
+	}
+	.btn-default{
+		background-color:#2f4050 !important;
+		color:#fff;
+		border: 2px solid #2f4050;
+		&:active{
+			color:#fff;
+			border: 2px solid #2f4050;
+		}
+		&:focus{
+			color:#fff;
+			border: 2px solid #2f4050;
+		}
+	}
+	i{
+		float:left;
+		line-height: 20px;
+	}
+}
+
+.form-horizontal .form-group{
+	margin-top: 20px;
+}
+
+.select2-container .select2-selection--single{
+	height: 34px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	line-height:34px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+	top:5px;
+	right:2px;
+}
+.fileinput-preview.fileinput-exists.thumbnail{
+	padding:0;
+	width: 174px; 
+	max-width:200px;
+	max-height: 150px;
+}
+
+#currentTaskList{
+	.editTaskInput{
+		border:none;
+		background-color:#e7eaec;
+		width:100%;
+		font-size: 13px;
+		display: none;
+	}
+	.updateTaskBtn, .cancelTaskEditBtn{
+		display: none;
+	}
+}
+#completed{
+	.editTaskInput{
+		border:none;
+		background-color:#e7eaec;
+		width:100%;
+		font-size: 13px;
+		display: none;
+	}
+	.editTaskBtn{
+		display: none !important;
+	}
+	.updateTaskBtn, .cancelTaskEditBtn{
+		display: none;
+	}
+}
+
+.centerAlign{
+	text-align: center;
+}
+
+.noMarginTop{
+	margin-top: 0 !important;
+}
+.note-editor.note-frame{
+	border:none !important;
+}
+.dropdown-messages-box{
+	.iconLink{
+		color:#676a6c !important;
+	}
+	.unredMailLink{
+		padding:0 !important;
+		color:#333;
+		font-size:12px !important;
+	}
+}
+
+.pagination{
+	margin:0;
+}
+.feed-activity-list{
+	a{
+		&:hover{
+			color:#333;
+		}
+	}
+}
+.note-editor.note-frame .note-editing-area .note-editable{
+	border: 1px solid #e5e6e7;
+}
+.jcrop-keymgr{
+	display:none !important;
+}
+.product-name{
+	min-height:45px;
+}
+.sidebar-container ul.nav-tabs.darker{
+	display:none;
+}

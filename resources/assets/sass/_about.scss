@@ -1,0 +1,151 @@
+.subNavigation{
+    background: #9D9D9D;
+    text-align: center;
+    a{
+        color: $white !important;
+        cursor: pointer;
+        padding: 10px 20px;
+        display: inline-block;
+        @include catamaran();
+        font-size: 16px;
+    }
+    a.active{
+        background: #4A4A4A;
+    }
+}
+
+.subNavigation.fixedToTop{
+    position: fixed;
+    top: 63px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.aboutParagraph{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    h4{
+        font-style: italic;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+div.blueAboutLine {
+    height: 3px;
+    width: 40%;
+    background: $blue;
+}
+.aboutVideo{
+    background-image: url('../img/about-video-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include lg{
+        background-attachment: fixed;
+    }
+    @include md{
+        background-attachment: fixed;
+    }
+    @include sm{
+        background-attachment: fixed;
+    }
+    @include xs{
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    padding: 80px 0;
+
+    .videoLineRight{
+        display: inline-block;
+        height: 3px;
+        background: #fff;
+        width: 40%;
+        margin-top: 40px;
+    }
+}
+
+.timelineSection{
+    position: relative;
+    padding: 80px 0 0;
+    background: url('../img/diagonal.png') no-repeat right top -200px;
+
+    ol, ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+    .events-content{
+        .someTimelineBreak{
+            height: 80px;
+            @include xs{
+                display: none;
+            }
+        }
+        @include xs{
+            position: relative !important;
+            top: auto;
+        }
+
+        h2{
+            font-size: 42px;
+            @include monts();
+            color: $blue;
+            letter-spacing: 1.25px;
+            padding-left: 30px;
+            @include lg{
+                font-size: 42px !important;
+            }
+        }
+        p{
+            position: relative;
+            display: inline-block;
+            padding-left: 30px;
+            font-weight: 400 !important;
+            font-size: 16px !important;
+            color: #333333 !important;
+            line-height: 24px;
+        }
+    }
+}
+
+.timelineWrapper{
+    background: #9D9D9D;
+    margin-top: 70px;
+    .events{
+        a{
+            font-size: 20px !important;
+            color: $white !important;
+        }
+        a.selected{
+            color: #374CA0 !important;
+
+        }
+    }
+}
+.missionVision{
+    background-image: url('../img/mission-vision-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 120px 0;
+    text-align: center;
+    color: $white;
+    h3{
+        font-size: 36px;
+        letter-spacing: 0.97px;
+        margin-bottom: 30px;
+        color: $white;
+        font-weight: 300;
+    }
+    p{
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,24 @@
+.downloadBlock{
+    border-top: 1px solid #979797;
+    padding: 13px;
+    &:last-child{
+        border-bottom: 1px solid #979797;
+    }
+    font-size: 20px;
+    @include xs{
+    font-size: 16px;
+    }
+    font-weight: 600;
+    color: #38383A;
+    letter-spacing: 0.81px;
+    .downloadBtn{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url('../img/download.svg') no-repeat center center;
+    }
+}
+
+.catalogCoverImage{
+    box-shadow: 5px 10px 20px 0 rgba(154,154,154,0.50);
+}

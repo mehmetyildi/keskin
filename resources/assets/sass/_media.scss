@@ -1,0 +1,20 @@
+.mediaTitle{
+    @include catamaran();
+    font-size: 26px;
+    color: #374CA0;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    a{
+        @include catamaran();
+        font-size: 26px;
+        color: #374CA0;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}

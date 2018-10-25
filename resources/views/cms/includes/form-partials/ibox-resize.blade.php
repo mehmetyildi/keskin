@@ -1,0 +1,5 @@
+<div class="ibox-tools">
+    <a class="collapse-link">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>

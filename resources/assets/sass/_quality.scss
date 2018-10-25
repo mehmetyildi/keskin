@@ -1,0 +1,70 @@
+.qualitySection{
+    background-image: url('../img/diagonal2.png');
+    background-repeat: no-repeat;
+    background-position: top -200px center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.qualityStatic{
+    position: relative;
+    background-image:  url('../img/white-board.png'), url('../img/img-pattern-left.png');
+    background-position: center center, right 18px top;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 10px;
+    width: 356px;
+    height: 827px;
+    float: right;
+    @include xs{
+        float: none;
+        width: 100%;
+        background: none;
+    }
+    .qualityCard{
+        width: 450px;
+        height: 151px;
+        @include xs{
+            width: 100%;
+            height: auto;
+            position: static !important;
+            margin-bottom: 30px;
+        }
+        .big{
+            @include catamaran();
+            font-size: 60px;
+            color: #374CA0;
+            display: block;
+            font-weight: 500;
+            line-height: 50px;
+        }
+        /* Portable Measuring A: */
+        font-size: 14px;
+        color: #222222;
+        letter-spacing: 0.86px;
+        line-height: 18px;
+        font-weight: 600;
+        img{
+            box-shadow: 10px 30px 50px 0 #C4C4C4;
+        }
+    }
+    .qualityCard1{
+        position: absolute;
+        top: 50px;
+        right: 90px;
+    }
+    .qualityCard2{
+        position: absolute;
+        top: 221px;
+        right: 90px;
+    }
+    .qualityCard3{
+        position: absolute;
+        top: 392px;
+        right: 90px;
+    }
+    .qualityCard4{
+        position: absolute;
+        top: 563px;
+        right: 90px;
+    }
+}

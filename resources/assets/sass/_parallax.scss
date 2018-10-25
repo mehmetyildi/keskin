@@ -1,0 +1,98 @@
+/*Parallax */
+section.module:last-child {
+    margin-bottom: 0;
+}
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+section.module p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 200;
+}
+section.module p:last-child {
+    margin-bottom: 0;
+}
+section.module.content {
+    padding: 40px 0;
+}
+section.module.parallax {
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    @include lg{
+        background-attachment: fixed;
+    }
+    @include md{
+        background-attachment: fixed;
+    }
+    @include sm{
+        background-attachment: fixed;
+        height: 300px;
+    }
+    @include xs{
+        background-position: 50% 0%;
+        background-size: none;
+        height:350px;
+    }
+}
+
+section.module.parallax-about {
+    background-image: url("../img/parallax-about4.jpg");
+    @include xs{
+        background-image: url("../img/parallax-about-mobile.jpg");
+    }
+
+}
+section.module.parallax-quality {
+    background-image: url("../img/parallax-quality.jpg");
+    @include xs{
+        background-image: url("../img/parallax-quality-mobile.jpg");
+    }
+}
+section.module.parallax-contact {
+    background-image: url("../img/parallax-contact.jpg");
+    @include xs{
+        background-image: url("../img/parallax-contact-mobile.jpg");
+    }
+}
+section.module.parallax-dc {
+    background-image: url("../img/parallax-dc.jpg");
+    @include xs{
+        background-image: url("../img/parallax-dc-mobile.jpg");
+    }
+}
+section.module.parallax-hub {
+    background-image: url("../img/parallax-hub.jpg");
+    @include xs{
+        background-image: url("../img/parallax-hub-mobile.jpg");
+    }
+}
+section.module.parallax-hr {
+    background-image: url("../img/parallax-hr.jpg");
+    @include xs{
+        background-image: url("../img/parallax-hr-mobile.jpg");
+    }
+}
+section.module.parallax-articles {
+    background-image: url("../img/parallax-news.jpg");
+    @include xs{
+        background-image: url("../img/parallax-news-mobile.jpg");
+    }
+}
+section.module.parallax-molds {
+    background-image: url("../img/parallax-molds2.jpg");
+    @include xs{
+        background-image: url("../img/parallax-molds-mobile.jpg");
+    }
+}
+section.module.parallax-presses {
+    background-image: url("../img/parallax_presses.jpg");
+    @include xs{
+        background-image: url("../img/parallax-presses-mobile.jpg");
+    }
+}
+
+

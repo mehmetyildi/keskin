@@ -1,0 +1,72 @@
+footer{
+    background-color: #fff;
+    background-image: url('../img/lastikizi.svg');
+    background-position:left center;
+    background-repeat: no-repeat;
+    padding: 70px 0 30px 0;
+    color: #38383A;
+    font-size:12px;
+    font-weight: 300;
+    box-shadow: 0 -3px 12px 0 rgba(200,200,200,0.50);
+    @include monts();
+    h5, h5>a{
+        color: #38383A;
+        font-weight:400;
+        font-size:14px;
+        margin-bottom: 10px;
+    }
+    address, a{
+        color: $body;
+        font-size:12px;
+        font-weight: 300;
+        &:hover{
+            color: #38383A;
+        }
+    }
+    a.block{
+        display: block;
+    }
+    .footerSocial{
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    form{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        button{
+            width: 30px;
+            background: transparent;
+            border: 1px solid #fff;
+            font-size: 14px;
+            color: $white;
+            display: inline-block;
+        }
+        input{
+            display: inline-block;
+            margin-right: 4px;
+            width: calc(100% - 50px);
+            padding: 4px 3px 3px 5px;
+            border: none;
+        }
+    }
+}
+
+.copyright{
+    background: #fff;
+    padding: 30px 0 0;
+    font-size: 14px;
+    color: #38383A;
+    border-top: 1px solid #9A9A9A;
+}
+
+.bthButton{
+    display: inline-block;
+    font-size: 14px;
+    color: #38383A;
+    font-weight: 300;
+    border-left: 1px solid #38383A;
+    padding-left: 10px;
+    margin-left: 6px;
+}

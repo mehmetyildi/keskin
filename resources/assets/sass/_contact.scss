@@ -1,0 +1,222 @@
+.contactPage{
+    background-image: url('../img/diagonal2.png');
+    background-repeat: no-repeat;
+    background-position: top -200px center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.contactElement{
+    .contactElementName{
+        display: inline-block;
+        color: $blue;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contactElementDescription{
+        line-height: 24px;
+    }
+    a{
+        color: #333;
+    }
+    margin-bottom: 20px;
+}
+
+#googleMaps{
+    height: 500px;
+    width:100%;
+}
+.googleMapsContainer{
+    padding: 15px;
+    background-image: url('../img/map-bg.png');
+    background-position:right -20px bottom -20px;
+    background-repeat:no-repeat;
+}
+
+.teamCard{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05), inset 0 1px 3px 0 rgba(0,0,0,0.05);
+    padding: 0 20px 20px 20px;
+    min-height: 365px;
+    background: #fff;
+    img{
+        border-bottom: 8px solid #6C95CE;
+    }
+    .memberName{
+        min-height: 180px;
+        margin-bottom: 10px;
+        padding: 50px 0;
+        h2{
+            font-size: 16px;
+            color: #212121;
+            letter-spacing: 2.31px;
+        }
+        h3{
+            font-size: 14px;
+            font-weight:200;
+            color: #263272;
+            letter-spacing: 2.31px;
+            line-height: 22px;
+        }
+    }
+    .memberContacts{
+        min-height:95px;
+        .memberLine{
+            margin-bottom: 5px;
+            font-size: 13px;
+            i{
+                color: $blue;
+                display: inline-block;
+                margin-right: 10px;
+            }
+            a{
+                color: #333;
+                font-size: 13px;
+            }
+        }
+    }
+    .shortLinks{
+        margin-top: 30px;
+        a{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .linkedin{
+            width:22px;
+            height:22px;
+            background-image: url('../img/linkedin.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 21px 21px;
+        }
+        .whatsapp{
+            width:21px;
+            height:21px;
+            background: url('../img/team/whatsapp.svg') no-repeat center center;
+        }
+        .vcf{
+            float: right;
+            width:20px;
+            height:24px;
+            background: url('../img/team/vcf.svg') no-repeat center center;
+        }
+    }
+}
+
+.contactToggle{
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .readMore{
+        margin-left: 20px;
+        color: $blue;
+    }
+}
+
+.contactToggle.shown{
+    display: block;
+}
+
+.contactToggler{
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+    width: 75%;
+    border: 1px solid #E3E3E3;
+    padding: 5px 40px;
+    /* Press Facility (HQ): */
+    @include catamaran();
+    font-size: 18px;
+    color: #4A4A4A;
+    background-image: url('../img/uzer_mini.svg');
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    -webkit-background-size: 26px;
+    background-size: 26px;
+}
+
+
+.testimonialParallax{
+    background-image: url('../img/contact-parallax.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include lg{
+        background-attachment: fixed;
+    }
+    @include md{
+        background-attachment: fixed;
+    }
+    @include sm{
+        background-attachment: fixed;
+    }
+    @include xs{
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    padding: 80px 0;
+    p{
+        color: $white;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    .readMore{
+        color: #C0D4EF;
+        @include catamaran();
+        font-weight: 500;
+        position: relative;
+        margin-right: 20px;
+        font-size: 15px;
+        @include transition(all, 0.30s, ease-in-out);
+        padding: 2px 5px;
+        margin-top: 20px;
+        &:hover{
+            background-color: #f2f2f2;
+            color: $blue;
+            &:after{
+                -webkit-transform: skewX(0deg);
+                -moz-transform: skewX(0deg);
+                -ms-transform: skewX(0deg);
+                transform: skewX(0deg);
+                right: 0px;
+            }
+            &:before{
+                -webkit-transform: skewX(0deg);
+                -moz-transform: skewX(0deg);
+                -ms-transform: skewX(0deg);
+                transform: skewX(0deg);
+                left: 0px;
+            }
+        }
+        &:after {
+            position: absolute;
+            @include transition(all, 0.30s, ease-in-out);
+            content: "";
+            z-index: 9;
+            right: -16px;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: #C0D4EF;
+            -webkit-transform: skewX(-25deg);
+            -moz-transform: skewX(-25deg);
+            -ms-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+        &:before {
+            position: absolute;
+            @include transition(all, 0.30s, ease-in-out);
+            content: "";
+            z-index: 9;
+            left: -16px;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: #C0D4EF;
+            -webkit-transform: skewX(-25deg);
+            -moz-transform: skewX(-25deg);
+            -ms-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.moldsParallax {
+    max-height: 700px;
+    overflow: hidden;
+    padding: 80px 0;
+    .productOpening{
+        max-width: 230px;
+        margin-left: 30%;
+        margin-top: 25%;
+    }
+}
+.openQuoteModal{
+    cursor: pointer;
+}
+.pressParallax {
+    @extend .moldsParallax;
+    .productOpening{
+        margin-left: 40%;
+    }
+    img{
+        margin-top: 7%;
+    }
+
+}
+
+.productInfo{
+    max-width: 640px;
+    img.img-fluid{
+        width: 90%;
+    }
+}
+.productInfo.float-right{
+    margin-right: 80px;
+    @include xs{
+        margin-right: 30px;
+    }
+}
+.productInfo.text-left{
+    margin-left: 80px;
+    @include xs{
+        margin-left: 30px;
+    }
+    a.readMore{
+        margin-left: 20px;
+    }
+}
+
